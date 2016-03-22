@@ -1,0 +1,6 @@
+CREATE TABLE "public"."animals" (
+    "id" serial,
+    "name" varchar(80) NOT NULL,
+    "quantity" int NOT NULL,
+    PRIMARY KEY ("id")
+);

@@ -1,0 +1,118 @@
+* {
+margin: 0;
+padding: 0;
+}
+html{
+  margin: 50px 50px 50px 50px;
+}
+body{
+  font-family: 'Oswald', sans-serif;
+  background: url('/assets/img/minimalistwinter.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: auto;
+  padding: 0px;
+  border: 0px;
+  margin: auto auto auto auto;;
+}
+
+.enter-todos {
+  display: block;
+  float: left;
+  padding: 0px;
+}
+#todos-submit{
+  width: 60px;
+  height: 50px;
+  background-color: #006699;
+  moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border: 5px solid #006699;
+  padding: 0px;
+  border-radius: 0px;
+  font-size: 20px;
+  color: white;
+
+}
+#circle-container{
+  width:100px;height:100px}.quarter{width:50px;height:50px}.top-left{border-top-left-radius:50px;background:#09f;float:left}.top-right{border-top-right-radius:50px;background:#666;float:right}.bottom-left{border-bottom-left-radius:50px;background:#aaa;float:left}.bottom-right{border-bottom-right-radius:50px;background:#333;float:right}
+#todos-submit:hover {
+  opacity: 0.6;
+  }
+#todos-input{
+  height: 30px;
+  border: 5px solid #006699;
+  padding: 5px;
+  font-size: 20px;
+  }
+.img{
+  display: inline;
+  width: 150px;
+  height: auto;
+}
+.active-todos{
+  display: block;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+/*btn*/
+.btn {
+  float: right;
+  position: relative;
+  padding: 5px;
+  overflow: hidden;
+  border-width: 0;
+  outline: none;
+  border-radius: 0px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+  background-color: #006699;
+  color: #ecf0f1;
+
+  transition: background-color .3s;
+}
+
+.btn:hover, .btn:focus {
+  background-color: rgba(0, 102, 153, 0.8);
+}
+
+.btn > * {
+  position: relative;
+}
+
+.completed-container{
+  /*padding-top: 50px;*/
+   opacity: 0.5
+}
+.active-todos{
+  padding-top: 80px;
+  padding-bottom: 30px;
+
+}
+.main{
+  max-width: 650px;
+}
+.slogan{
+  padding-bottom: 20px;
+}
+.description{
+  font-size: 12px;
+  padding-right: 20px;
+
+}
+.item{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.entire-container{
+  width: 600px;
+  background: rgba(153, 204, 255, 0.5);
+padding: 50px 50px 50px 50px;
+
+}
+.todo-container{
+  /*background: rgba(153, 204, 255, 0.5);*/
+  background: rgba(128, 232, 176, 1);
+  border-left: 5px solid #000;
+  margin: .4vw 0 .4vw 0;
+}
