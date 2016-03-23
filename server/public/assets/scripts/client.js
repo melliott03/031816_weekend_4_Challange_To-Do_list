@@ -121,7 +121,7 @@ function todosAppendDom(todosArray){
     $el.append('<button class="btn" id="btncomplete" data-status="completed" type="submit" value="Submit" data-id='+""+todosArray[i].id+'>'+'Done</button>');
     // $el.append('<input class="btn" id="btncomplete" data-status="completed" type="checkbox" value="Submit" data-id='+""+todosArray[i].id+'>'+'</input>');
     // <input type="checkbox" name="vehicle" value="Bike">
-    $el.append('<p data-id='+""+todosArray[i].id+'><span class="item">'+todosArray[i].item+'     '+'($'+todosArray[i].money+')'+'</span> --||-- '+"<span class='description'>"+todosArray[i].description+'</span></p>');
+    $el.append('<p class="item" data-id='+""+todosArray[i].id+'><span class="item-span">'+todosArray[i].item+'     '+'($'+todosArray[i].money+')'+'</span> --||-- '+"<span class='description'>"+todosArray[i].description+'</span></p>');
 
     if($el.data('completed') == true){
         $el.appendTo('.completed-container');
