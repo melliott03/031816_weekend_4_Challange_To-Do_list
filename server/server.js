@@ -27,7 +27,7 @@ if (process.env.DATABASE_URL) {
 pg.connect(connectionString, function(err, client, done){
   if (err) {
     console.log('Error connecting to DB!', err);
-
+    
   } else {
     var query = client.query('CREATE TABLE IF NOT EXISTS todos (' +
                               'id SERIAL PRIMARY KEY,' +
