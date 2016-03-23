@@ -52,7 +52,7 @@ body{
 .active-todos{
   display: block;
   padding-bottom: 50px;
-  padding-top: 20px;
+  padding-top: 140px;
 }
 
 /*btn*/
@@ -112,7 +112,8 @@ padding: 50px 50px 50px 50px;
 }
 .todo-container{
   /*background: rgba(153, 204, 255, 0.5);*/
-  background: rgba(128, 232, 176, 1);
+  background: rgba(51, 102, 153, .3);
   border-left: 5px solid #000;
   margin: .4vw 0 .4vw 0;
+  font: white;
 }

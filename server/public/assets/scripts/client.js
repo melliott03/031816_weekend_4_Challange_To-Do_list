@@ -130,7 +130,7 @@ function todosAppendDom(todosArray){
         plusMoney += parseFloat(todosArray[i].money);
         // $('.total-money').empty();
           console.log("plusMoney", plusMoney);
-          $('.total-money').text('I got money in the bank $'+ plusMoney);
+          $('.total-money').text('Total Earned $'+ plusMoney.toFixed(2));
 
 
         // $el.find("#checkbox").checked(true);
