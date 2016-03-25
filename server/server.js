@@ -27,12 +27,15 @@ if (process.env.DATABASE_URL) {
 pg.connect(connectionString, function(err, client, done){
   if (err) {
     console.log('Error connecting to DB!', err);
-    
+
   } else {
-    var query = client.query('CREATE TABLE IF NOT EXISTS todos (' +
+    var query = client.query('CREATE TABLE IF NOT EXISTS todos ('+
                               'id SERIAL PRIMARY KEY,' +
                               'item varchar(180) NOT NULL,' +
-                              'description varchar(10000) NOT NULL);'
+                              'description varchar(10000) NOT NULL,' +
+                              'completed boolean,' +
+                              'money varchar(8) );'
+
   );
     query.on('end', function(){
       console.log('Successfully ensured schema exists');
