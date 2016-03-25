@@ -116,7 +116,7 @@ function todosAppendDom(todosArray){
     $('.active-todos').append('<div id="todo-container" class="todo-container" data-completed='+""+todosArray[i].completed+' data-id='+""+todosArray[i].id+'>'+'</div>');
     var $el = $('.active-todos').children().last();
     $el.append('<button class="btn" id="btntimer" data-status="completed" type="submit" value="Submit" data-id='+""+todosArray[i].id+'>'+'Start Timer</button>');
-    $el.append('<textarea rows="1" cols="5" class="btn" id="timerSetvalue" data-status="completed" type="submit" value="Submit" placeholder="seconds" data-id='+""+todosArray[i].id+'>'+'</textarea>');
+    $el.append('<textarea rows="1" cols="5" class="btn" id="timerSetvalue" data-status="completed" type="submit" value="Submit" placeholder="enter seconds" data-id='+""+todosArray[i].id+'>'+'</textarea>');
     $el.append('<button class="btn" id="btndelete" data-status="delete" type="submit" value="Submit" data-id='+""+todosArray[i].id+'>'+'Delete</button>');
     $el.append('<button class="btn" id="btncomplete" data-status="completed" type="submit" value="Submit" data-id='+""+todosArray[i].id+'>'+'Done</button>');
     // $el.append('<input class="btn" id="btncomplete" data-status="completed" type="checkbox" value="Submit" data-id='+""+todosArray[i].id+'>'+'</input>');
